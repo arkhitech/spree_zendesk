@@ -26,6 +26,16 @@ Also you have to add these details while installing
 * customer id field id
 * order number field id
 * API token of your site
+* Site Url is to be provided from where the data is to be taken
+  'http://example.com/api/users/1?token=jh345h6h2356lh452kl6h45kl7h634kl63'
+    This is the type of final url that the app uses and you need to provide
+      http://example.com as site url
+
+#Important
+ Your site needs
+* api with an authentication token
+* orders table with number field
+* users table with id field
 
 ### Upload Private App
 * zat validate  on console to check for errors

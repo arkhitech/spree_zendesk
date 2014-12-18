@@ -10,8 +10,9 @@
     requests: {
       
       remoteGetOrderRequest: function(order_number,token) {
+        var site_url=this.setting('site_url');
         return {
-          url: 'http://luxuryperfume.arkhitech.com/api/orders/'+order_number +'?token='+token+'',
+          url: site_url+'/api/orders/'+order_number +'?token='+token+'',
           type:'GET',
           dataType: 'json'
         };

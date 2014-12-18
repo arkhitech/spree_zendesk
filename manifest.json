@@ -14,17 +14,26 @@
     {
       "name": "customer_id",
       "type": "text",
-      "required": true
+      "required": true,
+      "secure": true
     },
     {
       "name": "order_number_id",
       "type": "text",
-      "required": true
+      "required": true,
+      "secure": true
     },
     {
       "name": "token",
       "type": "text",
-      "required": true
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "site_url",
+      "type": "text",
+      "required": true,
+      "secure": true
     }
   ]
 }
