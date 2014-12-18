@@ -12,10 +12,19 @@
   "frameworkVersion": "1.0",
   "parameters": [
     {
+      "name": "customer_id",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "order_number_id",
+      "type": "text",
+      "required": true
+    },
+    {
       "name": "token",
       "type": "text",
-      "required": true,
-      "default": "3c65fab701d192a03cdc50be219b6a6113e664ae96962df8"
+      "required": true
     }
   ]
 }

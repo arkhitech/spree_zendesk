@@ -10,9 +10,6 @@
     requests: {
       
       remoteGetOrderRequest: function(order_number,token) {
-        console.log(token);
-        var url='http://luxuryperfume.arkhitech.com/api/orders/'+order_number +'?token='+token+'';
-        console.log(url);
         return {
           url: 'http://luxuryperfume.arkhitech.com/api/orders/'+order_number +'?token='+token+'',
           type:'GET',
@@ -40,9 +37,8 @@
     },
     getInfo: function() {
       var token=this.setting('token');
-      console.log(token);
-      var order_number=this.ticket().customField('custom_field_24150096');
-      console.log("order_number:"+order_number);
+      var order_number_field_id=this.setting('order_number_id');
+      var order_number=this.ticket().customField('custom_field_'+order_number_field_id);
       this.ajax('remoteGetOrderRequest', order_number,token);
     },
     
@@ -54,9 +50,8 @@
     displayInfo: function(data)
     {
       var token=this.setting('token');
-      console.log(data);
-      var customer_id=this.ticket().customField('custom_field_24102143');
-      console.log(customer_id);
+      var customer_field_id=this.setting('customer_id');
+      var customer_id=this.ticket().customField('custom_field_'+customer_field_id);
       this.ajax('remoteGetUserRequest', customer_id,token).then(
 
           function(user_data) {
@@ -64,7 +59,6 @@
             data.user_ship_address=user_data.ship_address;
             data.user_customer_since=user_data.created_at;
             data.user_email=user_data.email;
-//            this.formatDates(data);
             this.switchTo('order_details',data);
           },
 
