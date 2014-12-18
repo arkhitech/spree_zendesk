@@ -10,17 +10,18 @@
     requests: {
       
       remoteGetOrderRequest: function(order_number,token) {
-        var site_url=this.setting('site_url');
+        var your_site_url=this.setting('your_site_url');
         return {
-          url: site_url+'/api/orders/'+order_number +'?token='+token+'',
+          url: your_site_url+'/api/orders/'+order_number +'?token='+token+'',
           type:'GET',
           dataType: 'json'
         };
       },
       
       remoteGetUserRequest: function(id,token) {
+        var your_site_url=this.setting('your_site_url');
         return {
-          url: 'http://luxuryperfume.arkhitech.com/api/users/'+ id +'?token='+token+'',
+          url: your_site_url+'/api/users/'+ id +'?token='+token+'',
           type:'GET',
           dataType: 'json'
         };
