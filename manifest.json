@@ -1,5 +1,5 @@
 {
-  "name": "Luxury Perfume",
+  "name": "Spree Zendesk",
   "author": {
     "name": "Arkhitech",
     "email": "info@arkhitech.com",
@@ -9,5 +9,13 @@
   "private": true,
   "location": "ticket_sidebar",
   "version": "1.0",
-  "frameworkVersion": "1.0"
+  "frameworkVersion": "1.0",
+  "parameters": [
+    {
+      "name": "token",
+      "type": "text",
+      "required": true,
+      "default": "3c65fab701d192a03cdc50be219b6a6113e664ae96962df8"
+    }
+  ]
 }
