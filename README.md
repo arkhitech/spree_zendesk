@@ -11,6 +11,8 @@ This app gets data from a spree client based on order_number and customer_id (ex
 
 ## Usage Guide
 
+You will need to install ZAT tools
+
 * Clone the app
 * Go into the main folder
 * zat server on console
@@ -24,3 +26,9 @@ Also you have to add these details while installing
 * customer id field id
 * order number field id
 * API token of your site
+
+### Upload Private App
+* zat validate  on console to check for errors
+* zat package on console to package
+* go to settings -> manage
+* click upload app and follow through the process
