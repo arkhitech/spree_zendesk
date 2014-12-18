@@ -1,0 +1,20 @@
+<table>
+<tr>
+  <td>Profile:</td>
+  <td class="data"><a href="../../users/{{user.id}}" target="_blank">{{user.name}}</a></td>
+</tr>
+{{#if user.organization_id}}
+<tr>
+	<td>Organization:</td>
+	<td class="data">{{user.organization_name}}</td>
+</tr>
+{{/if}}
+<tr>
+  <td>User since:</td>
+  <td class="data">{{user.created_at}}</td>
+</tr>
+<tr>
+  <td>Last signed in:</td>
+  <td class="data">{{user.last_login_at}}</td>
+</tr>
+</table>

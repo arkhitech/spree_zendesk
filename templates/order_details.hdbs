@@ -1,0 +1,185 @@
+<legend>Order Details</legend>
+
+<table>
+<tr>
+  <td>Order Number :</td>
+  <td class="data">{{number}}</td>
+</tr>
+<tr>
+  <td>Item Total:</td>
+  <td class="data">{{display_item_total}}</td>
+</tr>
+<tr>
+  <td>Ship Total:</td>
+  <td class="data">{{display_ship_total}}</td>
+</tr>
+<tr>
+  <td>Tax Total:</td>
+  <td class="data">{{display_tax_total}}</td>
+</tr>
+<tr>
+  <td>Total:</td>
+  <td class="data">{{display_total}}</td>
+</tr>
+<tr>
+  <td>Bill Address:</td>
+  <td >
+<br>
+    <table>
+      
+      <tr>
+        <td>First Name:</td>
+        <td class="data">{{bill_address.firstname}}</td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td class="data">{{bill_address.lastname}}</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td class="data">{{bill_address.address1}}{{bill_address.address2}}</td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td class="data">{{bill_address.city}}</td>
+      </tr>
+      <tr>
+        <td>Zip Code:</td>
+        <td class="data">{{bill_address.zipcode}}</td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td class="data">{{bill_address.phone}}</td>
+      </tr>
+      <tr>
+        <td>Company:</td>
+        <td class="data">{{bill_address.company}}</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>Ship Address:</td>
+  <td >
+<br>
+    <table>
+      
+      <tr>
+        <td>First Name:</td>
+        <td class="data">{{ship_address.firstname}}</td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td class="data">{{ship_address.lastname}}</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td class="data">{{ship_address.address1}}{{ship_address.address2}}</td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td class="data">{{ship_address.city}}</td>
+      </tr>
+      <tr>
+        <td>Zip Code:</td>
+        <td class="data">{{ship_address.zipcode}}</td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td class="data">{{ship_address.phone}}</td>
+      </tr>
+      <tr>
+        <td>Company:</td>
+        <td class="data">{{ship_address.company}}</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<hr>
+<legend>Customer Details</legend>
+<table>
+<tr>
+  <td>Email :</td>
+  <td class="data">{{user_email}}</td>
+</tr>
+<tr>
+  <td>Customer Since:</td>
+  <td class="data">{{user_customer_since}}</td>
+</tr>
+
+<tr>
+  <td>Bill Address:</td>
+  <td >
+<br>
+    <table>
+      
+      <tr>
+        <td>First Name:</td>
+        <td class="data">{{user_bill_address.firstname}}</td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td class="data">{{user_bill_address.lastname}}</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td class="data">{{user_bill_address.address1}}{{user_bill_address.address2}}</td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td class="data">{{user_bill_address.city}}</td>
+      </tr>
+      <tr>
+        <td>Zip Code:</td>
+        <td class="data">{{user_bill_address.zipcode}}</td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td class="data">{{user_bill_address.phone}}</td>
+      </tr>
+      <tr>
+        <td>Company:</td>
+        <td class="data">{{user_bill_address.company}}</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>Ship Address:</td>
+  <td >
+<br>
+    <table>
+      
+      <tr>
+        <td>First Name:</td>
+        <td class="data">{{user_ship_address.firstname}}</td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td class="data">{{user_ship_address.lastname}}</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td class="data">{{user_ship_address.address1}}{{user_ship_address.address2}}</td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td class="data">{{user_ship_address.city}}</td>
+      </tr>
+      <tr>
+        <td>Zip Code:</td>
+        <td class="data">{{user_ship_address.zipcode}}</td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td class="data">{{user_ship_address.phone}}</td>
+      </tr>
+      <tr>
+        <td>Company:</td>
+        <td class="data">{{user_ship_address.company}}</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
